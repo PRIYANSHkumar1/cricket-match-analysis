@@ -445,12 +445,15 @@ def save_detailed_analysis():
 
 def main():
     """Main function"""
+    print("🏏 LIVE TNPL 2025 MATCH ANALYSIS 🏏")
+    print("=" * 65)
+    
     matches = get_realistic_todays_matches()
     save_detailed_analysis()
     
     print(f"\n📋 ANALYSIS SUMMARY")
     print("=" * 35)
-    print(f"✅ {len(matches)} matches analyzed")
+    print(f"✅ {len(matches) if matches else 0} matches analyzed")
     print("✅ Player form assessment completed")
     print("✅ Match predictions provided")
     print("✅ Key factors identified")
